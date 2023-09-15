@@ -40,7 +40,7 @@ px_bool PX_RuntimeInitialize(PX_Runtime *pe,px_int surface_width,px_int surface_
 	//resources
 	if(!PX_ResourceLibraryInitialize(&pe->mp_resources,&pe->ResourceLibrary))return PX_FALSE;
 	//surface
-	if (pe->surface_width==0||pe->surface_height==1)
+	if (pe->surface_width==0||pe->surface_height==0)
 	{
 		pe->RenderSurface.height=0;
 		pe->RenderSurface.width=0;
